@@ -1,7 +1,6 @@
 const { addCommunity, 
     getAllCommunityHandler,
     getCommunityByIdHandler,
-    // joinCommunity,
     searchCommunities
   } = require('./handler');
 
@@ -21,11 +20,6 @@ const routes = [
       path: '/community/{id}',
       handler: getCommunityByIdHandler,
     },
-    // {
-    //   method: 'POST',
-    //   path: '/community/{id}/join',
-    //   handler: joinCommunity,
-    // },
     {
       method: 'GET',
       path: '/community/search',
